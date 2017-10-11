@@ -1,0 +1,714 @@
+/*
+  ========================================
+  ==================HEADER================
+  ========================================
+*/
+header {
+  z-index: 99;
+}
+body {
+  font-family: font76698, 'Gotham', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+.page-header {
+  background-color: black;
+  position:fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  min-width: 990px;
+  height: 100px;
+}
+
+.page-header-container {
+  width: 964px;
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+  padding: 0 13px 15px;
+  font-size: 12px;
+}
+
+.account {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: gray;
+  padding: 10px;
+}
+
+.link:hover {
+  color: white;
+}
+
+.header-account {
+  float: left;
+}
+
+.header-shopping-cart-wishlist {
+    float: right;
+}
+
+.shopping-cart-wishlist {
+  margin-right: 18px;
+  display: block;
+  color:white;
+  position: relative;
+  font-size: 20px;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.header-wishlist {
+  display: block;
+
+}
+
+.header-cart-empty {
+  display: block;
+}
+
+.header-search {
+  float: right;
+  position: relative;
+  overflow: hidden;
+  height: 30px;
+  padding-top: 12px;
+}
+
+.header-rightside{
+  margin-right: 5%;
+}
+
+.logo {
+  position: absolute;
+  padding-left: 100%;
+}
+.page-head-container .logo .mimco img{
+  position: absolute;
+  left: 43%;
+  right: 50%;
+  max-width: 180px;
+}
+
+.header-nav {
+  position: absolute;
+  bottom: 0;
+  padding-left: 35%;
+}
+
+.header-nav-container{
+  padding: 5px 0 0;
+  margin: 0 auto;
+  height: 35px;
+  color: white;
+}
+.header-nav .header-nav-container ul a{
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  color: gray;
+}
+.header-nav .header-nav-container ul a:hover{
+  color: white;
+}
+
+/*
+  ========================================
+  ================DEFAULT PAGE============
+  ========================================
+*/
+.main-page {
+  width: 100%;
+  position: relative;
+}
+.cover-left {
+  padding-top: 100px;
+  width: 20%;
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  z-index: 0;
+  position: absolute;
+  min-height: 237vh;
+  left: 0%;
+}
+@media only screen and (min-width: 1600px) {
+    .cover-left {
+      min-height: 241vh;
+    }
+}
+
+.cover-right {
+  margin-top: 100px;
+  width: 20%;
+  background-image: url(img/background2.jpg);
+  background-size: cover;
+  position: absolute;
+  min-height: 237vh;
+  z-index: 0;
+  right: 0%;
+}
+
+@media only screen and (min-width: 1600px) {
+    .cover-right {
+      min-height: 241vh;
+    }
+}
+
+.grid {
+  margin-top: 100px;
+  position: absolute;
+  color:black;
+  width: 60%;
+  right:20%;
+  min-height: 100vh;
+}
+
+/*
+  ========================================
+  ==============SECTION 1 GRID============
+  ========================================
+*/
+
+#container {
+  width: 100%;
+  height: 70%;
+  position: absolute;
+}
+
+#flexcanvas {
+  width: 100%;
+  height: 600px !important;
+}
+
+.rowParent, .columnParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.columnParent {
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.flexChild {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  overflow: hidden;
+}
+
+#columnChildUnder50 {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  background-image: url(img/Under50.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#rowChildShoes {
+  background-image: url(img/Shoes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#rowChildWallets {
+  background: url(img/Wallet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#rowChildClutches {
+  background: url(img/Clutch.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: centre;
+}
+
+#rowChildBags {
+  background: url(img/Bags.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#columnChildMessage {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  background: url(img/Quote.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#columnChildBracelets {
+  background: url(img/Jewellery.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+
+#columnChildDress {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  background: url(img/Dress.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+
+#rowChild80239 {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.gridImage {
+  height: 100%;
+  width: 100%;
+}
+
+/*
+  ========================================
+  ============= SECTION 2 GRID============
+  ========================================
+*/
+
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  margin-top: 70vh;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+}
+
+.tallthin{
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+
+  height: 50%;
+  width: 15%;
+}
+
+.bigitem {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  flex-direction: column;
+  align-self: stretch;
+  overflow: hidden;
+
+  height: 50%;
+  width: 35%;
+
+}
+
+.bigitem2 {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  flex-direction: column;
+  align-self: stretch;
+  margin-top: -20.5%;
+
+  height: 50%;
+  width: 35%;
+
+}
+
+.smallitem {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  /*align-self: left;*/
+  height: 25%;
+  width: 15%;
+}
+
+.smallitem2 {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: flex-end;
+   background: orange;
+   height: 30%;
+   width: 15%;
+}
+
+#hipbags {
+  background-image: url(img/Hipbags.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#Under100 {
+  background-image: url(img/cases.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#Under100:hover{
+  background-image: url(img/quick-shop.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#handbag {
+  background-image: url(img/Handbags.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottombb;
+}
+
+#clutches {
+  background-image: url(img/EveningClutches.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#from150to200 {
+  background-image: url(img/to200.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#texture {
+  background-image: url(img/texture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#to100to150 {
+  background-image: url(img/100to150.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#to200to300 {
+  margin-top: -20%;
+  margin-left: 40%;
+  background-image: url(img/200to300.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50%;
+  width: 40%;
+  float: right;
+}
+
+#sunglasses {
+  margin-top: -20%;
+  background-image: url(img/Sunglasses.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bottomleft {
+  margin-top: -17%;
+  width: 20%;
+  height: 25%;
+}
+
+#gloss {
+  background-image: url(img/LipGloss.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#shutter {
+  background-image: url(img/Shutter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*
+  ========================================
+  ==============SECTION 3 GRID============
+  ========================================
+*/
+
+#containerGRID3 {
+  margin-top: 167vh;
+  width: 100%;
+  height: 70%;
+  position: absolute;
+}
+
+@media only screen and (min-width: 1600px) {
+    #containerGRID3 {
+        margin-top: 171vh;
+    }
+}
+
+#flexcanvas {
+  width: 100%;
+  height: 600px !important;
+}
+
+.rowParent, .columnParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.columnParent {
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.flexChild {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+#columnChildGifts300plus {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  background-image: url(img/300to400.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+#rowChildShoesFlats {
+  background-image: url(img/ShoesFlats.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#rowChildWallets2 {
+  background-image: url(img/Wallet2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#columnChildTrees {
+  background-image: url(img/Trees.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#columnChildTrees:hover {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#columnChildBagsAccessories {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  background-image: url(img/Shoulderbag.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#columnChildGifts400to500 {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  background-image: url(img/400to500.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#rowChild86148 {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+#rowChildAccessoriesExtras {
+  background-image: url(img/Accessories.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#rowChildBlogLink {
+  background-image: url(img/Texture2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#rowChild23226 {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+/*
+  ===================================
+  ==============FOOTER===============
+  ===================================
+*/
+.page-footer {
+  background-color: black;
+  position:absolute;
+  bottom: -166.5vh;
+  min-width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1600px) {
+    .page-footer {
+      bottom: -159.25vh;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .page-footer {
+      bottom: -162vh;
+    }
+}
+
+.page-footer-container {
+  margin: 0 auto;
+  position: initial;
+  /*padding: 25px 13px 12px;*/
+}
+
+.footer-nav1 {
+  text-transform: uppercase;
+  color: gray;
+  margin-left: 15%;
+  font-size: 10px;
+  list-style: none;
+  width: 70%;
+}
+
+.footer-nav1 ul {
+  list-style: none;
+}
+
+.footer-nav1 ul > li > span {
+  font-size: 15px;
+  display: inline-block;
+  margin-bottom: 7px;
+  margin-left: 7%;
+}
+
+.footer-nav1 ul > li > ul {
+  list-style: none;
+}
+
+.footer-nav1 ul > li > ul > li {
+  padding: 1px;
+}
